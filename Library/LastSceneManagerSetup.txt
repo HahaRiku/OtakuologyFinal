@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Kemurikusa.unity
+- path: "Assets/Scenes/\u30B1\u30E0\u30EA\u30AF\u30B5.unity"
   isLoaded: 1
   isActive: 1
