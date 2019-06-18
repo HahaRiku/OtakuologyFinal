@@ -114,10 +114,8 @@ MonoBehaviour:
   m_Children:
   - {fileID: 4}
   - {fileID: 6}
+  - {fileID: 12}
   m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
     width: 359
     height: 947
   m_MinSize: {x: 232, y: 492}
