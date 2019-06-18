@@ -224,6 +224,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 308178bf10f4e8b4dae8d2a678531691,
         type: 3}
+    - target: {fileID: 114472547267024672, guid: 4e694b740c1d7ac448fd87374ec287c5,
+        type: 2}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e694b740c1d7ac448fd87374ec287c5, type: 2}
   m_IsPrefabParent: 0
@@ -449,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8216b96bb774334fae390b3f0da7b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "\u901A\u95DC\u5F8C\u7684\u4E0B\u4E00\u95DC": "\u5C11\u5973\u6B4C\u5287"
+  "\u901A\u95DC\u5F8C\u7684\u4E0B\u4E00\u95DC": Title
   danmus:
   - danmu: {fileID: 648727559}
     "\u5E7E\u79D2\u5F8C\u4E0B\u4E00\u500B\u5F48\u5E55": 2
@@ -2179,6 +2184,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b8698ec6968054740ae790c3b39f30f8,
         type: 3}
+    - target: {fileID: 114472547267024672, guid: 4e694b740c1d7ac448fd87374ec287c5,
+        type: 2}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e694b740c1d7ac448fd87374ec287c5, type: 2}
   m_IsPrefabParent: 0
