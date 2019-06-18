@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         playerRT = gameObject.GetComponent<RectTransform>();
+        GlobalVariables.PlayerLocalPosition = playerRT.localPosition;
 	}
 	
 	// Update is called once per frame
@@ -23,16 +24,20 @@ public class PlayerController : MonoBehaviour {
         if (!GlobalVariables.gameOver && !GlobalVariables.win) {
             if (Input.GetKey(KeyCode.RightArrow) && playerRT.localPosition.x < GlobalVariables.gameWinX / 2 - playerRT.sizeDelta.x / 2) {
                 playerRT.localPosition = new Vector3(playerRT.localPosition.x + speed, playerRT.localPosition.y, playerRT.localPosition.z);
+                GlobalVariables.PlayerLocalPosition = playerRT.localPosition;
             }
             else if (Input.GetKey(KeyCode.LeftArrow) && playerRT.localPosition.x > (GlobalVariables.gameWinX / 2 - playerRT.sizeDelta.x / 2) * -1) {
                 playerRT.localPosition = new Vector3(playerRT.localPosition.x - speed, playerRT.localPosition.y, playerRT.localPosition.z);
+                GlobalVariables.PlayerLocalPosition = playerRT.localPosition;
             }
 
             if (Input.GetKey(KeyCode.UpArrow) && playerRT.localPosition.y < GlobalVariables.gameWinY / 2 - playerRT.sizeDelta.y / 2) {
                 playerRT.localPosition = new Vector3(playerRT.localPosition.x, playerRT.localPosition.y + speed, playerRT.localPosition.z);
+                GlobalVariables.PlayerLocalPosition = playerRT.localPosition;
             }
             else if (Input.GetKey(KeyCode.DownArrow) && playerRT.localPosition.y > (GlobalVariables.gameWinY / 2 - playerRT.sizeDelta.y / 2) *-1) {
                 playerRT.localPosition = new Vector3(playerRT.localPosition.x, playerRT.localPosition.y - speed, playerRT.localPosition.z);
+                GlobalVariables.PlayerLocalPosition = playerRT.localPosition;
             }
 
             if (Input.GetKeyDown(KeyCode.Z)) {

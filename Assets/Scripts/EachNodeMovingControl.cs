@@ -32,6 +32,7 @@ public class EachNodeMovingControl : MonoBehaviour {
                 //print(gameObject.name);
                 //print(GlobalVariables.gameWinX / 2 - size_pixel);
                 //print(objRT.localPosition.x);
+                GlobalVariables.DeleteDanmuElement(gameObject);
                 Destroy(gameObject);
             }
         }
@@ -61,6 +62,7 @@ public class EachNodeMovingControl : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll) {
         if (coll.name == "Player") {
             GlobalVariables.playerHP -= 1;
+            GlobalVariables.DeleteDanmuElement(gameObject);
             Destroy(gameObject);
         }
     }
