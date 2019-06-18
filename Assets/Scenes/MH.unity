@@ -639,7 +639,7 @@ MonoBehaviour:
   - {fileID: 877941048}
   - {fileID: 229016675}
   - {fileID: 1431395418}
-  bossHP: 100
+  bossHP: 500
   bulletDamage: 10
   bossHPBar: {fileID: 1172290390}
   LvName: {fileID: 2054949322}
