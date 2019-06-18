@@ -63,6 +63,7 @@ public class EachNodeMovingControl : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D coll) {
+		Debug.Log(coll.gameObject.name);
         if (coll.name == "Player") {
             GlobalVariables.playerHP -= 1;
             GlobalVariables.DeleteDanmuElement(gameObject);
