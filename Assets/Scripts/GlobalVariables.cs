@@ -17,6 +17,7 @@ public static class GlobalVariables {
     public static bool gameOver = false;
     public static bool win = false;
     public static int score = 0;
+    public static Vector3 PlayerLocalPosition;
 
     public static List<GameObject> DanmuElement = new List<GameObject>() ;
 
@@ -26,5 +27,9 @@ public static class GlobalVariables {
 
     public static void RushDanmus() {
         DanmuElement.Clear();
+    }
+
+    public static void DeleteDanmuElement(GameObject obj) {
+        DanmuElement.Remove(obj);
     }
 }
